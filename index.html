@@ -1,1 +1,178 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Vivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Campo Vivo</h1>
+    <p>Agro forte, futuro sustentável</p>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#consequencias">Consequências</a></li>
+            <li><a href="#solucoes">Soluções</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#dicas">Dicas</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section id="sobre">
+    <article>
+        <h2>Sobre o Desmatamento</h2>
+
+        <p>
+            O desmatamento é a remoção da vegetação natural de uma área.
+            Essa prática afeta o equilíbrio ambiental, reduz a biodiversidade
+            e contribui para as mudanças climáticas.
+        </p>
+
+        <p>
+            A preservação das florestas é fundamental para garantir um futuro
+            sustentável para as próximas gerações.
+        </p>
+    </article>
+</section>
+
+<section id="consequencias">
+    <article>
+        <h2>Consequências para o Planeta</h2>
+
+        <ul>
+            <li>Perda da biodiversidade.</li>
+            <li>Aumento do aquecimento global.</li>
+            <li>Redução da qualidade do solo.</li>
+            <li>Alterações no ciclo da água.</li>
+            <li>Maior risco de erosão.</li>
+        </ul>
+    </article>
+</section>
+
+<section id="solucoes">
+    <article>
+        <h2>Soluções Sustentáveis</h2>
+
+        <ul>
+            <li>Reflorestamento.</li>
+            <li>Preservação das áreas naturais.</li>
+            <li>Agricultura sustentável.</li>
+            <li>Educação ambiental.</li>
+            <li>Fiscalização contra desmatamento ilegal.</li>
+        </ul>
+    </article>
+</section>
+
+<section id="quiz">
+    <h2>Quiz Ambiental</h2>
+
+    <form id="formQuiz">
+
+        <div class="pergunta">
+            <p>1. O que é desmatamento?</p>
+            <label><input type="radio" name="q1" value="certo"> Remoção da vegetação natural</label>
+            <label><input type="radio" name="q1" value="errado"> Plantio de árvores</label>
+        </div>
+
+        <div class="pergunta">
+            <p>2. O desmatamento contribui para:</p>
+            <label><input type="radio" name="q2" value="certo"> Aquecimento global</label>
+            <label><input type="radio" name="q2" value="errado"> Resfriamento do planeta</label>
+        </div>
+
+        <div class="pergunta">
+            <p>3. Qual é uma solução sustentável?</p>
+            <label><input type="radio" name="q3" value="certo"> Reflorestamento</label>
+            <label><input type="radio" name="q3" value="errado"> Queimadas</label>
+        </div>
+
+        <div class="pergunta">
+            <p>4. O desmatamento prejudica:</p>
+            <label><input type="radio" name="q4" value="certo"> A biodiversidade</label>
+            <label><input type="radio" name="q4" value="errado"> A reciclagem</label>
+        </div>
+
+        <div class="pergunta">
+            <p>5. Preservar florestas ajuda:</p>
+            <label><input type="radio" name="q5" value="certo"> O meio ambiente</label>
+            <label><input type="radio" name="q5" value="errado"> O desmatamento</label>
+        </div>
+
+        <button type="button" onclick="corrigirQuiz()">
+            Ver Resultado
+        </button>
+
+    </form>
+
+    <p id="resultadoQuiz"></p>
+
+</section>
+
+<section id="dicas">
+    <h2>Gerador de Dicas Sustentáveis</h2>
+
+    <button onclick="gerarDica()">
+        Gerar dica sustentável
+    </button>
+
+    <p id="dica"></p>
+</section>
+
+<section id="curiosidades">
+    <h2>Curiosidades</h2>
+
+    <div class="cards">
+
+        <div class="card" onclick="mostrarCuriosidade(this)">
+            Clique para descobrir
+            <span class="texto-escondido">
+                Uma árvore adulta pode absorver cerca de 22 kg de CO₂ por ano.
+            </span>
+        </div>
+
+        <div class="card" onclick="mostrarCuriosidade(this)">
+            Clique para descobrir
+            <span class="texto-escondido">
+                Florestas ajudam a regular a temperatura do planeta.
+            </span>
+        </div>
+
+        <div class="card" onclick="mostrarCuriosidade(this)">
+            Clique para descobrir
+            <span class="texto-escondido">
+                O reflorestamento ajuda a recuperar áreas degradadas.
+            </span>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>Projeto Campo Vivo - Concurso Agrinho 2026</p>
+</footer>
+
+<div id="acessibilidade">
+
+    <button onclick="aumentarFonte()">A+</button>
+
+    <button onclick="diminuirFonte()">A-</button>
+
+    <button onclick="alternarContraste()">Contraste</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
